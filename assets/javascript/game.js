@@ -7,10 +7,18 @@
     // i.e. var score = yourScore + crystalValue; (note this may not be global)
 var wins = 0;
 var losses = 0;
-var targetScore = "";
-var myScore = "";
+var targetNumber = "";
+var counter = 0; 
 
+var crystalValue = 0;
+var crystalArray = [];
 
+crystals = {
+    red: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Red_Crystal_Transparent_PNG_Clip_Art_Image.png?m=1507172105",
+    purple: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Purple_Diamond_PNG_Clip_Art_Image-1908392122.png?m=1509854101",
+    green: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Green_Diamond_PNG_Clip_Art_Image.png?m=1509854101",
+    blue: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Blue_Diamond_Clip_Art_PNG_Image.png?m=1507172105",
+}
 
 //Logic to write in Functions:
     //three functions total-- keep them "dry" (do not repeat yourself)
