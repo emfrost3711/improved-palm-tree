@@ -1,13 +1,17 @@
-body{
-    background-image:url('https://www.freepik.com/free-vector/crystal-minerals-background_2869207.htm');
+body {
+  /* Background photo by Erin Profaci from Pexels */
+    background-image: assets/images/rosequartz.jpg;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    line-height:20px; font-size:14px;
-    font-family:"Trebuchet MS";
-    margin:0
+    line-height:20px; 
+    font-size:14px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
 
   .crystalPic {
     width: 200px;
+    height: 150px;
   }
+
+  
   
