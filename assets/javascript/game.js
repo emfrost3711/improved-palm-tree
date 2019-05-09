@@ -5,20 +5,61 @@
 //Global Variables: Your score, target score, wins count, loss count, crystal score; 
     //var radomNum - generateRandom(); 
     // i.e. var score = yourScore + crystalValue; (note this may not be global)
-var wins = 0;
-var losses = 0;
-var targetNumber = "";
+    var wins = 0;
+    var losses = 0;
+    
+function start (){   
+
+var targetNumber = Math.floor(Math.random() * (120-19) +19);
+// console.log(targetNumber + "this is our target number");
 var counter = 0; 
 
 var crystalValue = 0;
 var crystalArray = [];
 
-crystals = {
-    red: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Red_Crystal_Transparent_PNG_Clip_Art_Image.png?m=1507172105",
-    purple: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Purple_Diamond_PNG_Clip_Art_Image-1908392122.png?m=1509854101",
-    green: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Green_Diamond_PNG_Clip_Art_Image.png?m=1509854101",
-    blue: "https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Jewelry-and-Diamonds-PNG/Blue_Diamond_Clip_Art_PNG_Image.png?m=1507172105",
-}
+var crystal = {
+    blue: Math.floor(Math.random() * 13 +1),
+    green: Math.floor(Math.random() * 13 +1),
+    red: Math.floor(Math.random() * 13 +1),
+    purple: Math.floor(Math.random() * 13 +1)
+   
+} 
+$("#blue").attr("data-value", crystal.blue)
+$("#green").attr("data-value", crystal.green)
+$("#red").attr("data-value", crystal.red)
+$("#purple").attr("data-value", crystal.purple)
+// console.log("purple" + crystal.purple)
+// console.log("red" + crystal.red)
+// console.log("blue" + crystal.blue)
+// console.log("green" + crystal.green)
+$("#targetNumber").text(targetNumber);  
+
+$(".crystalPic").on("click", function () {
+// console.log("Crystal clicked!")
+var crystalValue=$(this).attr("data-value");
+// console.log(crystalValue)
+
+counter+=parseInt(crystalValue)
+console.log(counter + "counter")
+$("#currentScore").text(counter);
+
+if (counter > targetNumber) {
+    console.log("User loses!")
+    //increase losses
+    //call restart
+
+} else if (counter === targetNumber) {
+    console.log("User wins!")
+    //increase wins
+    //call restart
+} 
+})
+//
+
+
+} 
+start ()
+
 
 //Logic to write in Functions:
     //three functions total-- keep them "dry" (do not repeat yourself)
