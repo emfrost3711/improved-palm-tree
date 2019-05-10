@@ -10,8 +10,6 @@ var targetNumber = Math.floor(Math.random() * (120-19) +19);
 // console.log(targetNumber + "this is our target number");
 var counter = 0; 
 
-
-
 var crystal = {
     blue: Math.floor(Math.random() * 13 +1),
     green: Math.floor(Math.random() * 13 +1),
@@ -30,22 +28,34 @@ console.log("green" + crystal.green)
 $("#targetNumber").text(targetNumber);  
 
 $(".crystalPic").on("click", function () {
-console.log("Crystal clicked!")
+console.log("Crystal clicked!");
 var crystalValue=$(this).attr("data-value");
-console.log(crystalValue)
+console.log(crystalValue);
 
 counter+=parseInt(crystalValue);
-console.log(counter + "counter")
+console.log(counter + "counter");
 $("#currentScore").text(counter);
 
 if (counter > targetNumber) {
-    console.log("User loses!")
-    $("#losses").text(losses);
+    console.log("User loses!");
     losses++;
+    $("#losses").text(losses);
+    $("#currentScore").click(function(){
+        $("currentScore").empty();
+      });
+
 } else if (counter === targetNumber) {
-    console.log("User wins!")
-    $("#wins").text(wins);
+    console.log("User wins!");
     wins++;
+    $("#wins").text(wins);
 } 
 })
 }
+
+ //CALL START FUNCTION 
+start ()
+
+
+//reset/empty function
+
+
