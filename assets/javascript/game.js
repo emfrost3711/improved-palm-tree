@@ -37,9 +37,9 @@ function start() {
    reset ()
 
     $(".crystalPic").on("click", function () {
-        console.log("Crystal clicked!");
+        // console.log("Crystal clicked!");
         var crystalValue = $(this).attr("data-value");
-        console.log(crystalValue);
+        // console.log(crystalValue);
 
         // console.log("counter is " + counter);
 

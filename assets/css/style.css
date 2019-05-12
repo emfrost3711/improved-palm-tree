@@ -3,6 +3,7 @@ h1 {
   text-align: center;
   font-size: 72px;
   padding: 50px;
+  color: darkorchid;
 }
 
 body {
@@ -24,6 +25,14 @@ body {
 
 .stats {
   position: absolute;
+  color: darkorchid;
 }
-  
-  
+
+.col-md-7 {
+  float:right;
+}
+
+.instructions {
+  color: indigo;
+  font-weight: bold;
+}
