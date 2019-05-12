@@ -1,10 +1,12 @@
-title {
+h1 {
   font-family: 'Ruthie', cursive;
+  text-align: center;
+  font-size: 72px;
 }
 
 body {
   /* Background photo by Erin Profaci from Pexels */
-    background-image: url(/assets/images/rosequartz.jpg);
+    background-image: url("../images/rosequartz.jpg");
     background-size: cover;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
