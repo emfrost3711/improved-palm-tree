@@ -17,22 +17,22 @@ body {
   width: 200px;
   height: 150px;
   padding: 10px;
+  float: right;
  }
 
-.row-1 row-2 {
-  padding-right: 10%;
-}
 
 .stats {
-  position: absolute;
   color: darkorchid;
-}
-
-.col-md-7 {
-  float:right;
+  font-size:28px;
+  font-weight: bold;
 }
 
 .instructions {
   color: indigo;
+  font-size:18px;
   font-weight: bold;
+  padding-left:50px;
 }
+
+
+
